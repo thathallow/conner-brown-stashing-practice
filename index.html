@@ -7,18 +7,35 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
+    <header id="home" class="site-header">
+        <a class="site-title" href="#home">My Awesome Portfolio</a>
         <nav>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-    </ul>
-</nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    
+
     <main>
-        <p>This is my personal website where I showcase my work.</p>
+        <section id="about" class="content-section" aria-labelledby="about-heading">
+            <p class="eyebrow">A personal portfolio</p>
+            <h1 id="about-heading">Welcome to my portfolio.</h1>
+            <p class="intro">This is my personal website where I showcase my work.</p>
+        </section>
+
+        <section id="contact" class="content-section" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact Me</h2>
+            <p class="intro">
+                Email:
+                <a class="contact-link" href="mailto:cbrown741726@gmail.com">cbrown741726@gmail.com</a>
+            </p>
+        </section>
     </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 My Portfolio.</p>
+    </footer>
 </body>
 </html>
